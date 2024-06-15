@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
+     <title><%= og.title %></title>
+    <meta name="description" content="<%= og.description %>">
+    <meta property="og:title" content="<%= og.title %>">
+    <meta property="og:description" content="<%= og.description %>">
+    <meta property="og:image" content="<%= og.image %>">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src='alertConfig.js'></script>
     <style type="text/css">
@@ -33,7 +37,7 @@
   width: 100%;
   top: -50%;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
+ background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
   -webkit-animation: run 7s 0s infinite;
           animation: run 7s 0s infinite;
@@ -162,6 +166,10 @@ label{
             <div class='divButton'>
                 <button title="Enviar Mensaje" class='button'>Enviar</button>
             </div>
+
+            <div class="divButton">
+                  <a title="Inicia sesion con Google" href='/auth/google'><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" width="150"></a> 
+             </div>
 
         </form>
 

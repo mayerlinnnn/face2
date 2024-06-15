@@ -99,7 +99,7 @@ span {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    height:30vh;
+    height:auto;
     margin:3rem auto;
 }
 
